@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Flappy Bird Game</title>
-</head>
-<body>
+
   <h1>Flappy Bird Game</h1>
   <p>A simple game where you control a bird to avoid obstacles and score points.</p>
 
@@ -19,5 +14,3 @@
 
   <h2>Contributing</h2>
   <p>Contributions are welcome! Please read the <a href="CONTRIBUTING.md">CONTRIBUTING</a> file for details on how to contribute.</p>
-</body>
-</html>
