@@ -53,3 +53,20 @@ canvas {
   .jump:active {
     box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
   }
+
+  @media screen and (max-width: 600px) {
+    .jump {
+      font-size: 20px;
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    canvas {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
