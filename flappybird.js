@@ -93,9 +93,9 @@ button.innerHTML = "Play Again";
 button.style.fontSize = "20px";
 button.style.padding = "10px";
 button.style.marginTop = "20px";
-button.style.backgroundColor = "#4433ff";
+button.style.backgroundColor = "##efefef";
 button.style.border = "none";
-button.style.color = "white";
+button.style.color = "#585858";
 button.style.borderRadius = "5px";
 button.addEventListener("click", function () {
   document.location.reload();

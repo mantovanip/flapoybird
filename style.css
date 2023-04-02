@@ -33,25 +33,23 @@ canvas {
     max-height: 500px;
 }
 
-.jump {
+  .jump {
     width: 100px;
     height: 100px;
     color: #fff;
     padding: 5px 10px;
     font-weight: bold;
-    font-size: large;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
     transform: translate(2%, 10%);
     outline: none;
     border-radius: 75px;
-    border: 2px solid #322e2e;
-    background: #4433ff;
+    border: none;
+    background: #efefef;
+    box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
+    color: #585858;
   }
-  
-  .jump:hover {
-    background: #fff;
-    color: #4433ff
+  .jump:active {
+    box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
   }
-  
