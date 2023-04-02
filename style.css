@@ -43,7 +43,7 @@ canvas {
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-    transform: translate(-2%, 10%);
+    transform: translate(2%, 10%);
     outline: none;
     border-radius: 75px;
     border: 2px solid #322e2e;
