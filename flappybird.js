@@ -6,8 +6,8 @@ let xPos = 10;
 let yPos = 150;
 let ySpeed = 0;
 let gravity = 0.1;
-let birdWidth = 40;
-let birdHeight = 30;
+let birdWidth = 45;
+let birdHeight = 35;
 
 
 // Define variables for pipe position, width, and gap
@@ -21,6 +21,14 @@ let pipeRadius = 50;
 let score = 0;
 let gameOver = false;
 
+// End the game and display score
+function endGame() {
+  gameOver = true;
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "black";
+  ctx.font = "30px Arial";
+  ctx.fillText("Game over! Score: " + score, 50, 150);
+}
 // Start the game loop
 function startGame() {
   canvas = document.getElementById("canvas");
@@ -29,6 +37,7 @@ function startGame() {
   bird.src = "bird.png"; // set the src attribute to the file path of the image
   setInterval(updateGame, 10);
 }
+
 
 
 // Update game state and redraw canvas
@@ -78,14 +87,6 @@ function updateGame() {
 }
 
 
-// End the game and display score
-function endGame() {
-  gameOver = true;
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  ctx.fillStyle = "black";
-  ctx.font = "30px Arial";
-  ctx.fillText("Game over! Score: " + score, 50, 150);
-}
 // Create reset button
 const button = document.createElement("button");
 button.innerHTML = "Play Again";
