@@ -21,15 +21,6 @@ let pipeRadius = 50;
 let score = 0;
 let gameOver = false;
 
-//clouds
-let cloud = new Image();
-cloud.src = "background.png";
-
-cloud.onload = function() {
-  ctx.drawImage(cloud, 0, 0, canvas.width, canvas.height);
-  // add the rest of your game code here
-}
-
 // Start the game loop
 function startGame() {
   canvas = document.getElementById("canvas");
@@ -49,8 +40,8 @@ function updateGame() {
     endGame();
     return;
   }
-
-  // Move pipe and check for collision
+ 
+    // Move pipe and check for collision
   pipeX -= 2;
   if (pipeX < -pipeWidth) {
     pipeX = canvas.width;
@@ -63,11 +54,9 @@ function updateGame() {
     return;
   }
 
-  // Clear canvas and redraw game objects
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   // Add board around game area
-  ctx.fillStyle = "lightblue";
+  ctx.fillStyle = "#66CCFF";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   ctx.strokeStyle = "black";
   ctx.lineWidth = 10;
@@ -82,6 +71,7 @@ function updateGame() {
   ctx.drawImage(bird, xPos, yPos, birdWidth, birdHeight);
 
   // Draw score
+  
   ctx.fillStyle = "black";
   ctx.font = "20px Arial";
   ctx.fillText("Score: " + score, 10, 30);
@@ -94,7 +84,7 @@ function endGame() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.fillStyle = "black";
   ctx.font = "30px Arial";
-  ctx.fillText("Game over! Your Score: " + score, 50, 150);
+  ctx.fillText("Game over! You Score: " + score, 50, 150);
 }
 // Create reset button
 const button = document.createElement("button");
@@ -109,6 +99,7 @@ button.style.borderRadius = "5px";
 button.addEventListener("click", function () {
   document.location.reload();
 });
+
 document.body.appendChild(button);
 
 // Listen for user input and update bird speed
@@ -117,6 +108,17 @@ document.addEventListener("keydown", event => {
     ySpeed = 4;
   }
 });
+
+const jumpButton = document.getElementById("jump-button");
+jumpButton.addEventListener("touchstart", event => {
+  event.preventDefault(); // prevent default touch behavior
+  if (!gameOver) {
+    ySpeed = 4;
+  }
+});
+
+
+
 
 // Start the game when the window loads
 window.onload = startGame;
