@@ -32,3 +32,24 @@ canvas {
     max-width: 500px;
     max-height: 500px;
 }
+
+.jump {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: block;
+    margin: 5px auto;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid #4433ff;
+    background: #4433ff;
+  }
+  .jump:hover {
+    background: #fff;
+    color: #4433ff
+  }

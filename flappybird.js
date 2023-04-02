@@ -84,7 +84,7 @@ function endGame() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.fillStyle = "black";
   ctx.font = "30px Arial";
-  ctx.fillText("Game over! You Score: " + score, 50, 150);
+  ctx.fillText("Game over! Score: " + score, 50, 150);
 }
 // Create reset button
 const button = document.createElement("button");
@@ -92,7 +92,7 @@ button.innerHTML = "Play Again";
 button.style.fontSize = "20px";
 button.style.padding = "10px";
 button.style.marginTop = "20px";
-button.style.backgroundColor = "blue";
+button.style.backgroundColor = "#4433ff";
 button.style.border = "none";
 button.style.color = "white";
 button.style.borderRadius = "5px";
