@@ -10,7 +10,7 @@
   <p>Press the Space bar to make the bird flap its wings and fly upward. Avoid the green pipes by flying through the gap in the middle. Each time you pass through a pipe, you score one point.</p>
 
   <h2>License</h2>
-  <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+  <p>This project is licensed under the MIT License.</p>
 
   <h2>Contributing</h2>
   <p>Contributions are welcome!</p>
