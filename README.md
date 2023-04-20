@@ -13,4 +13,4 @@
   <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
 
   <h2>Contributing</h2>
-  <p>Contributions are welcome! Please read the <a href="CONTRIBUTING.md">CONTRIBUTING</a> file for details on how to contribute.</p>
+  <p>Contributions are welcome!</p>
